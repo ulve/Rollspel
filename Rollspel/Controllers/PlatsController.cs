@@ -17,8 +17,7 @@ namespace Rollspel.Controllers
         public ActionResult Index()
         {
             var platsRepo = GetPlatsRepository();
-            var lista = platsRepo.FindAll().ToList();
-            
+            var lista = platsRepo.FindAll().ToList();            
             
             return View(lista);
         }
